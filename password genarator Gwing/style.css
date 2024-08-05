@@ -1,0 +1,109 @@
+/* Basic styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Container styling */
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="number"], input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #000;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.error-message {
+    color: red;
+    margin: 5px 0;
+    font-size: 0.9em;
+    height: 1em; 
+}
+
+.success-message {
+    color: green;
+    margin: 5px 0;
+    font-size: 0.9em;
+    height: 1em; 
+}
+
+
+/* Theme toggle button styles */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#themeToggle {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; /* Adjust icon size */
+    color: #000; /* Default color */
+    transition: color 0.3s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+
+.container.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+input[type="number"].dark-mode, input[type="text"].dark-mode {
+    background-color: #555;
+    color: #f4f4f4;
+    border: 1px solid #444;
+}
+
+button.dark-mode {
+    background-color: #007bff;
+    color: white;
+}
+
+button.dark-mode:hover {
+    background-color: #0056b3;
+}
+
+/* Change icon color in dark mode */
+body.dark-mode #themeToggle {
+    color: #f4f4f4;
+}
